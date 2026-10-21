@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# BEFORE LAUNCH: replace the placeholder with the final public HTTPS URL.
+Sitemap: https://YOUR-CLOUDFLARE-PAGES-DOMAIN/sitemap.xml

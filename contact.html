@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact & Book a Meeting | WebNexa</title><meta name="description" content="Send a project enquiry to WebNexa or use the meeting booking link when it has been configured."><meta property="og:site_name" content="WebNexa"><meta property="og:title" content="Contact & Book a Meeting | WebNexa"><meta property="og:description" content="Send a project enquiry to WebNexa or use the meeting booking link when it has been configured."><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta name="theme-color" content="#B5122B"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<style>
+.contact-form-section { background: #f8f7fc; }
+.contact-form-layout { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:clamp(28px,6vw,80px); align-items:start; }
+.contact-form-intro h2 { font-size:clamp(32px,4vw,48px); line-height:1.08; letter-spacing:-.05em; margin:14px 0; color:#28252A; }
+.contact-form-intro > p { color:#716B68; line-height:1.8; max-width:430px; }
+.contact-detail { margin-top:32px; display:grid; gap:8px; }
+.contact-detail-label { color:#B5122B; font-size:10px; font-weight:800; letter-spacing:.15em; }
+.contact-detail a { color:#28252A; font-weight:650; }
+.contact-form { background:#fff; border:1px solid #EEE7E0; border-radius:18px; padding:clamp(22px,4vw,36px); box-shadow:0 12px 36px rgba(37,34,56,.04); }
+.form-row { display:grid; gap:8px; margin-bottom:20px; }
+.form-row label { color:#343047; font-size:13px; font-weight:650; }
+.form-row input, .form-row select, .form-row textarea { width:100%; padding:13px 14px; border:1px solid #e4e1ee; border-radius:9px; background:#fff; color:#28252A; font:inherit; font-size:14px; outline:none; }
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus { border-color:#C58B2A; box-shadow:0 0 0 3px rgba(98,85,217,.1); }
+.form-row textarea { resize:vertical; min-height:130px; }
+.contact-submit { width:100%; padding:14px 18px; }
+.form-note { margin:14px 0 0; font-size:11px; color:#858194; line-height:1.6; }
+@media(max-width:760px) { .contact-form-layout { grid-template-columns:1fr; } }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WebNexa","email":"admin.webnexa@gmail.com","description":"WebNexa creates websites, digital experiences and brand identities."}</script></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="index.html" aria-label="WebNexa home"><img class="brand-logo" src="webnexa-logo.png" alt="WebNexa — Build, Connect, Grow"></a><nav class="navlinks" id="navlinks"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="case-studies.html">Case Studies</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="navcta" href="contact.html#booking">Book a meeting ↗</a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">◐</button><button class="menu" id="menu" aria-label="Toggle menu">☰</button></div></header><main><section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><span class="pulse"></span>Contact · Let's get talking</div><h1>Let's build<br><span class="grad">something meaningful.</span></h1><p>Have an idea, a challenge or a project waiting to happen? Tell us what you're working on.</p><div class="hero-actions"><a class="btn" href="contact.html">Let's talk ↗</a><a class="btn secondary" href="services.html">Explore services ↓</a></div></div><div class="visual"><div class="orbit"></div><div class="orb"></div><div class="floatcard fc1"><span>DESIGN + DEVELOPMENT</span><b>Made to matter.</b></div><div class="floatcard fc2"><span>WEBNEXA STUDIO</span><b>Build what's next ↗</b></div></div></div></section>
+<section class="section contact-form-section">
+  <div class="wrap contact-form-layout">
+    <div class="contact-form-intro">
+      <div class="kicker">PROJECT ENQUIRY</div>
+      <h2>Tell us what you're planning.</h2>
+      <p>Fill out the form and your message will be sent to the WebNexa team by email. We'll review your details and get back to you.</p>
+      <div class="contact-detail">
+        <span class="contact-detail-label">EMAIL</span>
+        <a href="mailto:admin.webnexa@gmail.com">admin.webnexa@gmail.com</a>
+      </div>
+    </div>
+    <form class="contact-form" action="https://formsubmit.co/admin.webnexa@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New WebNexa website enquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="form-row">
+        <label for="contact-name">Your name *</label>
+        <input id="contact-name" name="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="form-row">
+        <label for="contact-email">Email address *</label>
+        <input id="contact-email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-row">
+        <label for="contact-company">Organization / company</label>
+        <input id="contact-company" name="organization" type="text" placeholder="Your organization (optional)">
+      </div>
+      <div class="form-row">
+        <label for="contact-service">What do you need help with? *</label>
+        <select id="contact-service" name="service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option>Website design and development</option>
+          <option>UI/UX design</option>
+          <option>Brand identity</option>
+          <option>Digital solutions</option>
+          <option>Other / not sure yet</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="contact-budget">Estimated budget</label>
+        <select id="contact-budget" name="budget">
+          <option value="" selected>Choose a range (optional)</option>
+          <option>Under ₹5,000</option><option>₹5,000–₹15,000</option><option>₹15,000–₹50,000</option><option>₹50,000+</option><option>Need guidance</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="contact-message">Tell us about your project *</label>
+        <textarea id="contact-message" name="message" rows="5" placeholder="What are you planning, and what would you like to achieve?" required></textarea>
+      </div>
+      <button class="btn contact-submit" type="submit">Send enquiry ↗</button>
+      <p class="form-note">Your message will be sent to WebNexa by email. Please don't include passwords or sensitive personal information.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="booking"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">MEETING BOOKING</div><h2>Prefer a quick call?</h2></div><p>Choose a time for a project discovery meeting. The booking provider has not been selected yet.</p></div>
+<div class="booking-placeholder"><strong>Booking link not configured yet</strong><p>Replace <code>BOOKING_URL_HERE</code> in <code>site.js</code> with your public Calendly or Cal.com booking URL. Until then, contact WebNexa by email to arrange a time.</p><p><a class="btn secondary" href="mailto:admin.webnexa@gmail.com?subject=WebNexa%20meeting%20request">Request a meeting by email ↗</a></p></div>
+</div></section>
+<section class="section"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Get in touch</div><h2>Let's make your<br>next move happen.</h2></div><p>Share a little about your idea, website or digital project. Email is the quickest way to reach WebNexa for now.</p></div><div class="cards"><article class="card reveal"><span class="num">EMAIL</span><div class="ico">✉</div><h3>Start a conversation</h3><p>Send your project details, goals and expected timeline.</p><p style="margin-top:16px"><a class="btn" href="mailto:admin.webnexa@gmail.com?subject=Project%20enquiry%20for%20WebNexa">Email WebNexa ↗</a></p></article><article class="card reveal"><span class="num">WHAT TO INCLUDE</span><div class="ico">✎</div><h3>Help us understand</h3><p>Tell us what you want to build, who it is for and what success looks like.</p></article><article class="card reveal"><span class="num">NEXT STEP</span><div class="ico">↗</div><h3>We'll take it from there</h3><p>We'll review your enquiry and discuss suitable next steps.</p></article></div></div></section><section class="cta"><div class="wrap"><div class="cta-box reveal"><div class="kicker" style="color:#B5122B">ONE GOOD CONVERSATION</div><h2>Every big thing starts somewhere.</h2><p>Tell us where you'd like to go next.</p><a class="btn" href="mailto:admin.webnexa@gmail.com?subject=Project%20enquiry%20for%20WebNexa">admin.webnexa@gmail.com ↗</a></div></div></section></main><footer><div class="wrap foot"><div><a class="brand" href="index.html" aria-label="WebNexa home"><img class="brand-logo" src="webnexa-logo.png" alt="WebNexa — Build, Connect, Grow"></a><p>© <span id="year"></span> WebNexa. Built for what's next.</p></div><div class="footlinks"><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div></footer><a class="whatsapp-float" data-whatsapp-link href="contact.html" aria-label="Contact WebNexa on WhatsApp"><span aria-hidden="true">◉</span> WhatsApp</a><script src="site.js"></script></body></html>
